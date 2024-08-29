@@ -3,7 +3,6 @@ print(f"{name}\n")
 
 feeling = input("Select how you are feeling: \n1: Happy \n2: Sad \n3: Angry \n4: Depressed \n5: Ambitious \n6: Calm \n7: Defensive \n8: Fearful \n9: Frustrated \n10: Nervous \n11: Anxious\n")
 
-#mood = "Blah"
 
 def numberFeeling(feeling):
   if(feeling == "1"):
@@ -63,10 +62,4 @@ def pickFeeling(mood):
       print(f"whoa you're {mood}, try stepping away from what you're doingand try to relax")  
 pickFeeling(mood)
 
-#if(weather.lower() == "cool"):
- # print(f"hello {name}, your mood is {mood} because the weather is not {weather}")
 
-#name = input("enter your name: ")
-#print(name)
-
-#mood = input("enter your mood: ")
