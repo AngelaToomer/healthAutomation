@@ -35,7 +35,8 @@ print(f"Hello {name}, tell me why you're feeling {mood} ")
   
 notes = input(">: ")
 
-#write notes out to a file with todays date
+with open("note.txt", "w") as file:
+    file.write(notes)
 
 def pickFeeling(mood):
     if(feeling == "1"):
