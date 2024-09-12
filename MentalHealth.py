@@ -1,3 +1,6 @@
+#all imports should be at the top
+import datetime
+
 name = input("Enter your name: ")
 print(f"{name}\n")
 
@@ -32,11 +35,17 @@ def numberFeeling(feeling):
 
 mood = numberFeeling(feeling)  
 print(f"Hello {name}, tell me why you're feeling {mood} ")
+
   
 notes = input(">: ")
 
-with open("note.txt", "w") as file:
-    file.write(notes)
+with open("note.txt", mode="a+") as file:
+    file.write('%s client %s reported feeling %s because %s.\n' % (datetime.datetime.now(), name, mood, notes))
+
+
+#with open("note.txt", mode='a') as file:
+    
+    
 
 def pickFeeling(mood):
     if(feeling == "1"):
