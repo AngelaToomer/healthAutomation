@@ -39,9 +39,15 @@ print(f"Hello {name}, tell me why you're feeling {mood} ")
   
 notes = input(">: ")
 
-with open("note.txt", mode="a+") as file:
+with open(f"{name}-note.txt", mode="a+") as file:
     file.write('%s client %s reported feeling %s because %s.\n' % (datetime.datetime.now(), name, mood, notes))
+#items = ["angie", "dave", "test"]
 
+#for item in items:
+ #   with open("{}note.txt".format(item), "w") as f:
+ #       f.write("This is my first line of code")
+  #      f.write("\nThis is my second line of code with {} the first item in my list".format(item))
+ #       f.write("\nAnd this is my last line of code")
 
 #with open("note.txt", mode='a') as file:
     
