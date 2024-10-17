@@ -1,8 +1,15 @@
 #all imports should be at the top
 import datetime
 
-name = input("Enter your name: ")
-print(f"{name}\n")
+name = input("Enter name: ")
+if name.isalpha():
+  print(f"{name}\n")
+else:
+ print("invalid input only alphabetic characters "+name) 
+ exit()
+
+#name = input("Enter your name: ")
+#print(f"{name}\n")
 
 feeling = input("Select how you are feeling: \n1: Happy \n2: Sad \n3: Angry \n4: Depressed \n5: Ambitious \n6: Calm \n7: Defensive \n8: Fearful \n9: Frustrated \n10: Nervous \n11: Anxious\n")
 
